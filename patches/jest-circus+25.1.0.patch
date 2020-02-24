@@ -1,0 +1,199 @@
+diff --git a/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts b/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts
+new file mode 100644
+index 0000000..fe5e554
+--- /dev/null
++++ b/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts
+@@ -0,0 +1,10 @@
++/**
++ * Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
++ *
++ * This source code is licensed under the MIT license found in the
++ * LICENSE file in the root directory of this source tree.
++ */
++import { Circus } from '@jest/types';
++declare const testEventHandler: Circus.EventHandler;
++export default testEventHandler;
++//# sourceMappingURL=testEventHandler.d.ts.map
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts.map b/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts.map
+new file mode 100644
+index 0000000..01c54fc
+--- /dev/null
++++ b/node_modules/jest-circus/build/__mocks__/testEventHandler.d.ts.map
+@@ -0,0 +1 @@
++{"version":3,"file":"testEventHandler.d.ts","sourceRoot":"","sources":["../../src/__mocks__/testEventHandler.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,OAAO,EAAC,MAAM,EAAC,MAAM,aAAa,CAAC;AAEnC,QAAA,MAAM,gBAAgB,EAAE,MAAM,CAAC,YAmD9B,CAAC;AACF,eAAe,gBAAgB,CAAC"}
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/__mocks__/testUtils.d.ts b/node_modules/jest-circus/build/__mocks__/testUtils.d.ts
+new file mode 100644
+index 0000000..38653b4
+--- /dev/null
++++ b/node_modules/jest-circus/build/__mocks__/testUtils.d.ts
+@@ -0,0 +1,14 @@
++/**
++ * Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
++ *
++ * This source code is licensed under the MIT license found in the
++ * LICENSE file in the root directory of this source tree.
++ */
++import { ExecaSyncReturnValue } from 'execa';
++interface Result extends ExecaSyncReturnValue {
++    status: number;
++    error: string;
++}
++export declare const runTest: (source: string) => Result;
++export {};
++//# sourceMappingURL=testUtils.d.ts.map
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/__mocks__/testUtils.d.ts.map b/node_modules/jest-circus/build/__mocks__/testUtils.d.ts.map
+new file mode 100644
+index 0000000..f72fe71
+--- /dev/null
++++ b/node_modules/jest-circus/build/__mocks__/testUtils.d.ts.map
+@@ -0,0 +1 @@
++{"version":3,"file":"testUtils.d.ts","sourceRoot":"","sources":["../../src/__mocks__/testUtils.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAOH,OAAO,EAAC,oBAAoB,EAAoB,MAAM,OAAO,CAAC;AAW9D,UAAU,MAAO,SAAQ,oBAAoB;IAC3C,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,EAAE,MAAM,CAAC;CACf;AAED,eAAO,MAAM,OAAO,4BA2DnB,CAAC"}
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.d.ts.map b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.d.ts.map
+index 19fd131..c58c047 100644
+--- a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.d.ts.map
++++ b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.d.ts.map
+@@ -1 +1 @@
+-{"version":3,"file":"jestAdapter.d.ts","sourceRoot":"","sources":["../../src/legacy-code-todo-rewrite/jestAdapter.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAGH,OAAO,EAAC,MAAM,EAAC,MAAM,aAAa,CAAC;AACnC,OAAO,EAAC,eAAe,EAAC,MAAM,mBAAmB,CAAC;AAClD,OAAO,EAAC,UAAU,EAAC,MAAM,mBAAmB,CAAC;AAC7C,OAAO,OAAO,GAAG,QAAQ,cAAc,CAAC,CAAC;AAKzC,QAAA,MAAM,WAAW,4JAsEhB,CAAC;AAgCF,SAAS,WAAW,CAAC"}
+\ No newline at end of file
++{"version":3,"file":"jestAdapter.d.ts","sourceRoot":"","sources":["../../src/legacy-code-todo-rewrite/jestAdapter.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAGH,OAAO,EAAC,MAAM,EAAC,MAAM,aAAa,CAAC;AACnC,OAAO,EAAC,eAAe,EAAC,MAAM,mBAAmB,CAAC;AAClD,OAAO,EAAC,UAAU,EAAC,MAAM,mBAAmB,CAAC;AAC7C,OAAO,OAAO,GAAG,QAAQ,cAAc,CAAC,CAAC;AAKzC,QAAA,MAAM,WAAW,4JAwEhB,CAAC;AAgCF,SAAS,WAAW,CAAC"}
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.d.ts.map b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.d.ts.map
+index 3c803c1..c80714e 100644
+--- a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.d.ts.map
++++ b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.d.ts.map
+@@ -1 +1 @@
+-{"version":3,"file":"jestAdapterInit.d.ts","sourceRoot":"","sources":["../../src/legacy-code-todo-rewrite/jestAdapterInit.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;;AAEH,OAAO,EAAC,MAAM,EAAE,MAAM,EAAE,MAAM,EAAC,MAAM,aAAa,CAAC;AACnD,OAAO,EAAC,eAAe,EAAC,MAAM,mBAAmB,CAAC;AAClD,OAAO,EAGL,UAAU,EAEX,MAAM,mBAAmB,CAAC;AAsB3B,eAAO,MAAM,UAAU;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CA2GtB,CAAC;AAEF,eAAO,MAAM,kCAAkC;;;;yBA0F9C,CAAC"}
+\ No newline at end of file
++{"version":3,"file":"jestAdapterInit.d.ts","sourceRoot":"","sources":["../../src/legacy-code-todo-rewrite/jestAdapterInit.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;;AAEH,OAAO,EAAC,MAAM,EAAE,MAAM,EAAE,MAAM,EAAC,MAAM,aAAa,CAAC;AACnD,OAAO,EAAC,eAAe,EAAC,MAAM,mBAAmB,CAAC;AAClD,OAAO,EAGL,UAAU,EAEX,MAAM,mBAAmB,CAAC;AAwB3B,eAAO,MAAM,UAAU;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CA2GtB,CAAC;AAEF,eAAO,MAAM,kCAAkC;;;;yBA2F9C,CAAC"}
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js
+index d53935f..815ad30 100644
+--- a/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js
++++ b/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js
+@@ -76,6 +76,8 @@ function _defineProperty(obj, key, value) {
+   return obj;
+ }
+ 
++// TODO: hard to type
++// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+ const initialize = ({
+   config,
+   environment,
+@@ -203,6 +205,7 @@ const runAndTransformResultsToJestFormat = async ({
+     return {
+       ancestorTitles,
+       duration: testResult.duration,
++      failureDetails: testResult.errorsDetailed,
+       failureMessages: testResult.errors,
+       fullName: title
+         ? ancestorTitles.concat(title).join(' ')
+diff --git a/node_modules/jest-circus/build/utils.d.ts b/node_modules/jest-circus/build/utils.d.ts
+index a9a27cd..62fcdde 100644
+--- a/node_modules/jest-circus/build/utils.d.ts
++++ b/node_modules/jest-circus/build/utils.d.ts
+@@ -7,14 +7,16 @@
+ import { Circus } from '@jest/types';
+ export declare const makeDescribe: (name: string, parent?: Circus.DescribeBlock | undefined, mode?: void | "skip" | "only" | "todo" | undefined) => Circus.DescribeBlock;
+ export declare const makeTest: (fn: import("@jest/types/build/Global").TestFn | undefined, mode: Circus.BlockMode, name: string, parent: Circus.DescribeBlock, timeout: number | undefined, asyncError: any) => Circus.TestEntry;
+-export declare const getAllHooksForDescribe: (describe: Circus.DescribeBlock) => {
+-    beforeAll: Circus.Hook[];
+-    afterAll: Circus.Hook[];
++declare type DescribeHooks = {
++    beforeAll: Array<Circus.Hook>;
++    afterAll: Array<Circus.Hook>;
+ };
+-export declare const getEachHooksForTest: (test: Circus.TestEntry) => {
+-    beforeEach: Circus.Hook[];
+-    afterEach: Circus.Hook[];
++export declare const getAllHooksForDescribe: (describe: Circus.DescribeBlock) => DescribeHooks;
++declare type TestHooks = {
++    beforeEach: Array<Circus.Hook>;
++    afterEach: Array<Circus.Hook>;
+ };
++export declare const getEachHooksForTest: (test: Circus.TestEntry) => TestHooks;
+ export declare const describeBlockHasTests: (describe: Circus.DescribeBlock) => boolean;
+ export declare const callAsyncCircusFn: (fn: Circus.AsyncFn, testContext: Record<string, any> | undefined, { isHook, timeout }: {
+     isHook?: boolean | null | undefined;
+@@ -25,4 +27,5 @@ export declare const makeRunResult: (describeBlock: Circus.DescribeBlock, unhand
+ export declare const getTestID: (test: Circus.TestEntry) => string;
+ export declare const addErrorToEachTestUnderDescribe: (describeBlock: Circus.DescribeBlock, error: any, asyncError: any) => void;
+ export declare function invariant(condition: unknown, message?: string): asserts condition;
++export {};
+ //# sourceMappingURL=utils.d.ts.map
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/utils.d.ts.map b/node_modules/jest-circus/build/utils.d.ts.map
+index 7eeda55..c1d38db 100644
+--- a/node_modules/jest-circus/build/utils.d.ts.map
++++ b/node_modules/jest-circus/build/utils.d.ts.map
+@@ -1 +1 @@
+-{"version":3,"file":"utils.d.ts","sourceRoot":"","sources":["../src/utils.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,OAAO,EAAC,MAAM,EAAC,MAAM,aAAa,CAAC;AAUnC,eAAO,MAAM,YAAY,uIAmBxB,CAAC;AAEF,eAAO,MAAM,QAAQ,mMAmBnB,CAAC;AAkBH,eAAO,MAAM,sBAAsB;;;CAuBlC,CAAC;AAEF,eAAO,MAAM,mBAAmB;;;CA0B/B,CAAC;AAEF,eAAO,MAAM,qBAAqB,6CAG0C,CAAC;AAe7E,eAAO,MAAM,iBAAiB;;;kBAsF7B,CAAC;AAEF,eAAO,MAAM,eAAe,2CAG3B,CAAC;AAEF,eAAO,MAAM,aAAa,qFAMxB,CAAC;AAuDH,eAAO,MAAM,SAAS,oCASrB,CAAC;AA8BF,eAAO,MAAM,+BAA+B,4EAY3C,CAAC;AAEF,wBAAgB,SAAS,CACvB,SAAS,EAAE,OAAO,EAClB,OAAO,CAAC,EAAE,MAAM,GACf,OAAO,CAAC,SAAS,CAInB"}
+\ No newline at end of file
++{"version":3,"file":"utils.d.ts","sourceRoot":"","sources":["../src/utils.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,OAAO,EAAC,MAAM,EAAC,MAAM,aAAa,CAAC;AAUnC,eAAO,MAAM,YAAY,uIAmBxB,CAAC;AAEF,eAAO,MAAM,QAAQ,mMAmBnB,CAAC;AAkBH,aAAK,aAAa,GAAG;IACnB,SAAS,EAAE,KAAK,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;IAC9B,QAAQ,EAAE,KAAK,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;CAC9B,CAAC;AAEF,eAAO,MAAM,sBAAsB,mDAsBlC,CAAC;AAEF,aAAK,SAAS,GAAG;IACf,UAAU,EAAE,KAAK,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;IAC/B,SAAS,EAAE,KAAK,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC;CAC/B,CAAC;AAEF,eAAO,MAAM,mBAAmB,uCAuB/B,CAAC;AAEF,eAAO,MAAM,qBAAqB,6CAG0C,CAAC;AAe7E,eAAO,MAAM,iBAAiB;;;kBAsF7B,CAAC;AAEF,eAAO,MAAM,eAAe,2CAG3B,CAAC;AAEF,eAAO,MAAM,aAAa,qFAMxB,CAAC;AAyDH,eAAO,MAAM,SAAS,oCASrB,CAAC;AA2BF,eAAO,MAAM,+BAA+B,4EAY3C,CAAC;AAEF,wBAAgB,SAAS,CACvB,SAAS,EAAE,OAAO,EAClB,OAAO,CAAC,EAAE,MAAM,GACf,OAAO,CAAC,SAAS,CAInB"}
+\ No newline at end of file
+diff --git a/node_modules/jest-circus/build/utils.js b/node_modules/jest-circus/build/utils.js
+index 346f757..1dc02fb 100644
+--- a/node_modules/jest-circus/build/utils.js
++++ b/node_modules/jest-circus/build/utils.js
+@@ -248,7 +248,7 @@ exports.getTestDuration = getTestDuration;
+ 
+ const makeRunResult = (describeBlock, unhandledErrors) => ({
+   testResults: makeTestResults(describeBlock),
+-  unhandledErrors: unhandledErrors.map(_formatError)
++  unhandledErrors: unhandledErrors.map(_getError).map(getErrorStack)
+ });
+ 
+ exports.makeRunResult = makeRunResult;
+@@ -289,9 +289,11 @@ const makeTestResults = describeBlock => {
+       }
+     }
+ 
++    const errorsDetailed = test.errors.map(_getError);
+     testResults.push({
+       duration: test.duration,
+-      errors: test.errors.map(_formatError),
++      errors: errorsDetailed.map(getErrorStack),
++      errorsDetailed,
+       invocations: test.invocations,
+       location,
+       status,
+@@ -322,7 +324,7 @@ const getTestID = test => {
+ 
+ exports.getTestID = getTestID;
+ 
+-const _formatError = errors => {
++function _getError(errors) {
+   let error;
+   let asyncError;
+ 
+@@ -334,21 +336,17 @@ const _formatError = errors => {
+     asyncError = new Error();
+   }
+ 
+-  if (error) {
+-    if (error.stack) {
+-      return error.stack;
+-    }
+-
+-    if (error.message) {
+-      return error.message;
+-    }
++  if (error && (error.stack || error.message)) {
++    return error;
+   }
+ 
+   asyncError.message = `thrown: ${(0, _prettyFormat.default)(error, {
+     maxDepth: 3
+   })}`;
+-  return asyncError.stack;
+-};
++  return asyncError;
++}
++
++const getErrorStack = error => error.stack || error.message;
+ 
+ const addErrorToEachTestUnderDescribe = (describeBlock, error, asyncError) => {
+   for (const test of describeBlock.tests) {

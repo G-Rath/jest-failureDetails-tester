@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+jest_repo_path=${1:-'/c/Users/G-Rath/workspace/projects-oss/jest/'}
+jest_packages_to_link=(
+  "jest-circus"
+  "jest-jasmine2"
+)
+
+for package in "${jest_packages_to_link[@]}"; do
+  pack_path="node_modules/$package/build"
+  repo_path="$jest_repo_path/packages/$package/build"
+  rm -r "$pack_path"
+  ln -s "$repo_path" "$pack_path"
+
+  echo "created link for $package"
+done
